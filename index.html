@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <title>Task Manager App</title>
+  </head>
+  <body>
+
+    <!-- <header id="header-area">
+      <div id="heading">Task Manager App</div>
+    </header> -->
+
+    <!-- <div class="new-task">
+      <input id="input-task" type="text" class="no-outline" placeholder="+ Add a new task..."> -->
+       <!-- <button id="submit" type="submit">Add task</button>     -->
+    <!-- </div>  -->
+
+    <!-- modal -->
+    <div class="modal" id="task-form">
+      <div class="modal-header">
+        <div class="title">Create a new task</div>
+        <button class="btn close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- <input type="text" id="task-input" /> -->
+        <label for="task-name">Task Name:</label>
+        <!-- <input type="text" id="task-name" placeholder="Task name..."> -->
+        <label for="task-desc">Task Description:</label>
+        <textarea id="task-description" rows="5" cols="10" placeholder="Task description..."></textarea> 
+        <input type="submit" value="Create Task" id="task-submit" />
+      </div>
+    </div>
+    <!-- task -->
+    <div class="task-container">
+      <div class="status" id="open">
+        <h3>Open</h3>
+        <button id="add_btn" data-target-modal="#task-form">+ add a task</button>
+        <!-- <div class="task" draggable="true">
+          Buy a Pizza
+          <span class="close">&times;</span>
+        </div> -->
+      </div>
+      <div class="status" id="in-progress">
+      <h3>In Progress</h3>
+      </div>
+      <div class="status" id="in-review">
+        <h3>In Review</h3>
+      </div>
+      <div class="status" id="done">
+        <h3>Done</h3>
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+
+  </body>
+</html>
 
