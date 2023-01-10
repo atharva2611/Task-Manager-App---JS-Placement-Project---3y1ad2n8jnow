@@ -25,7 +25,6 @@ body {
 #in-review,
 #done .status {
   margin: 20px;
-
 }
 
 #done {
@@ -56,7 +55,7 @@ body {
   padding: 0.5rem 1rem;
 }
 
-#add_btn {
+#add-btn {
   padding: 0.5rem 1rem;
   background-color: #ccc;
   outline: none;
@@ -68,7 +67,7 @@ body {
   cursor: pointer;
 }
 
-#add_btn:hover {
+#add-btn:hover {
   background-color: #aaa;
 }
 
@@ -176,7 +175,7 @@ body {
 
 
 #header-area {
-  height: 35px;
+  height: 40px;
   width: 100%;
   font-size: 25px;
   font-weight: bold;
@@ -185,7 +184,7 @@ body {
   align-items: center;
   position: absolute;
   display: flex;
-  bottom: 93.8%;
+  bottom: 94%;
 }
 
 #heading {
@@ -197,12 +196,16 @@ body {
   position: absolute;
   bottom: 88%;
   border: hidden;
+  border-radius: 5px;
   height: 5%;
   box-shadow: 5px 10px 5px lightgrey;
   /* border-right: hidden; */
-  
 }
 
+.no-outline:hover {
+  background-color: whitesmoke;
+}
+ 
 #task-name {
   width: 100%;
   height: 30px;
