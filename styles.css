@@ -12,7 +12,8 @@ body {
 }
 
 .task-container {
-  width: 1000px;
+  /* width: 1000px; */
+  width: 100%;
   height: 80vh;
   display: flex;
   justify-content: space-evenly;
@@ -24,14 +25,17 @@ body {
 #in-progress,
 #in-review,
 #done .status {
-  margin: 20px;
+  margin: 12.5px;
+  left: 10px; 
+  height: 425px;
 }
 
 #done {
-  margin-left: 20px;
-  height: 73vh;
-  top: 4.1%;
-}
+  margin-left: 12.5px;
+  height: 425px;
+  top: 11.6px; 
+  left: 10px;
+ }
 
 .status {
   width: 25%;
@@ -175,6 +179,7 @@ body {
 
 
 #header-area {
+  top: 0;
   height: 40px;
   width: 100%;
   font-size: 25px;
@@ -184,7 +189,8 @@ body {
   align-items: center;
   position: absolute;
   display: flex;
-  bottom: 94%;
+  justify-content: center;
+  /* bottom: 94%; */
 }
 
 #heading {
