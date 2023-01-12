@@ -14,7 +14,7 @@
     </header>
 
     <div class="new-task">
-      <input id="input-task" type="text" class="no-outline" placeholder="+ Add a new task..." data-target-modal="#task-form">
+      <span id="input-task" class="no-outline" data-target-modal="#task-form">+ Add a new task...</span>
        <!-- <button id="submit" type="submit">Add task</button>     -->
     </div> 
 
@@ -31,23 +31,35 @@
           <input type="text" id="task-name" placeholder=" Task name..."><br><br>
           <label for="task-desc">Task Description :</label>
         <textarea id="task-description" rows="8" cols="55" placeholder=" Task description..."></textarea> 
-        <input type="submit" value="Add Task" id="task-submit" />
+        <button type="button" id="task-submit">Add task</button>
       </div>
     </div>
     <!-- task -->
     <div class="task-container">
-      <div class="status" id="open">
+      <div class="status in-progress" id="open">
         <h3>Open</h3>
-        <button id="add-btn" data-target-modal="#task-form">+ add a task</button>
-        <div class="task" draggable="true">
-          Buy a Pizza
-          <span class="close">&times;</span>
+        <!-- <button id="add-btn" data-target-modal="#task-form">+ add a task</button> -->
+<!-- 
+        <div class="task" >
+
+          <div id="task-heading-task">
+            My Task
+            <div class="close">&times;</div>
+          </div>
+
+          <div id="description">
+            My description
+          </div>
+
         </div>
+
+ -->
+
       </div>
-      <div class="status" id="in-progress">
+      <div class="status in-review" id="in-progress">
       <h3>In Progress</h3>
       </div>
-      <div class="status" id="in-review">
+      <div class="status done" id="in-review">
         <h3>In Review</h3>
       </div>
       <div class="status" id="done">
